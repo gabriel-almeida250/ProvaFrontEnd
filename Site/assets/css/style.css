@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   font-family: 'Times New Roman', Times, serif;
+}
+header{
+    padding: 10px;
+    margin: auto;
+    background-color: #f70000;
+    
+}
+.left-side h1{
+    margin-bottom: 10px;
+}
+.right-side{    
+    align-items: center;
+}
+.left-side, .right-side{
+    display: flex;
+    justify-content: center;
+}
+.navegacao{
+    display: flex;
+    gap: 30px;
+}
+.navegacao li{
+    list-style-type: none;
+}
+.icones ul{
+    display: flex;
+    justify-content: right;
+    list-style-type: none;
+    padding-right: 30px;
+}
+.icones img{
+    display: flex;
+    width: 50px;
+    padding-top: 5px;
+}
+.textotopo {
+    text-align: center;
+   
+}
+.textotopo h2{
+    margin: 3%;
+}
+.textotopo p{
+    padding-right: 40px;
+    padding-left: 40px;
+}
+.sites h2{
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f70000;
+    margin: 40px;
+}
+.container-conteudo{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.card{
+    max-width: 300px;
+    border: 2px solid #f70000;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+.card p{
+    border-top: 2px solid #f70000;
+    text-align: center;
+    padding: 2%;
+}
+.card .container-botao{
+    display: flex;
+    justify-content: end;
+}
+
+.card a{
+    background-color: aqua;
+    color: azure;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 1px solid#333;
+}
+.card img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    padding: 5% ;
+}
+
+
+@media screen and (min-width:992px){
+    header{
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    .right-side{    
+        align-items: center;
+    }
+    .sites h2{
+        display: flex;
+        text-align: left;
+        padding-right: auto;
+    }
+    .container-conteudo{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        flex-wrap: wrap;
+       
+        
+       
+    }
+}
