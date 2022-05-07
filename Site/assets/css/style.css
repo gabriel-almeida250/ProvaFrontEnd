@@ -93,7 +93,23 @@ header{
     border-radius: 10px 10px 0 0;
     padding: 5% ;
 }
+.newsletter{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-right: 20px;
+    margin-left: 20px;
+    
 
+}
+.newsletter img{
+    width: 130px;
+    border-radius: 100%;
+
+}
+.newsletter p{
+    padding-left: 30px;
+}
 
 @media screen and (min-width:992px){
     header{
@@ -117,7 +133,20 @@ header{
         width: 100%;
         flex-wrap: wrap;
        
-        
-       
+    }
+    .newsletter{
+        display: flex;
+        padding-right: 40px;
+        padding-left: 40px;
+        flex-wrap: nowrap;
+
+    }
+    .newsletter img{
+        width: 130px;
+        border-radius: 100%;
+    
+    }
+    .newsletter p{
+        padding-left: 30px;
     }
 }
