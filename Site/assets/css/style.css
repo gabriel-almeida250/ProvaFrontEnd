@@ -11,7 +11,6 @@ header{
     padding: 10px;
     margin: auto;
     background-color: #f70000;
-    
 }
 .left-side h1{
     margin-bottom: 10px;
@@ -25,38 +24,43 @@ header{
 }
 .navegacao{
     display: flex;
-    gap: 30px;
+    gap: 40px;
 }
 .navegacao li{
     list-style-type: none;
 }
 .icones ul{
     display: flex;
-    justify-content: right;
+    justify-content:end;
     list-style-type: none;
-    padding-right: 30px;
+    padding-right: 33px;
 }
 .icones img{
-    display: flex;
-    width: 50px;
-    padding-top: 5px;
+    width: 40px;
+    padding-left: 3px;
+    padding-top: 10px;
 }
 .textotopo {
     text-align: center;
    
 }
 .textotopo h2{
-    margin: 3%;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 .textotopo p{
-    padding-right: 40px;
-    padding-left: 40px;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 40px;
 }
-.sites h2{
+.subtitulo{
+    border-bottom: 2px solid #ff0000;
+    margin: 0px 40px 40px 40px;
+
+}
+.subtitulo h2{
     text-align: center;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #f70000;
-    margin: 40px;
+    margin-bottom: 20px;
 }
 .container-conteudo{
     display: flex;
@@ -71,9 +75,8 @@ header{
     margin-bottom: 40px;
 }
 .card p{
-    border-top: 2px solid #f70000;
     text-align: center;
-    padding: 2%;
+    padding: 3%;
 }
 .card .container-botao{
     display: flex;
@@ -89,28 +92,30 @@ header{
     border: 1px solid#333;
 }
 .card img{
+    height: 200px;
     width: 100%;
+    object-fit: cover;
+    border-bottom: 2px solid #f70000;
     border-radius: 10px 10px 0 0;
-    padding: 5% ;
 }
-.newsletter{
+.sobreMim{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     margin-right: 20px;
     margin-left: 20px;
-    
-
 }
-.newsletter img{
-    width: 130px;
+.sobreMim img{
+    width: 200px;
+    height: 200px;
     border-radius: 100%;
+    margin-bottom: 40px;
+}
+.sobreMim div p{
+    text-align: center;
+    margin-bottom: 40px;
 
 }
-.newsletter p{
-    padding-left: 30px;
-}
-
 @media screen and (min-width:992px){
     header{
         display: flex;
@@ -122,31 +127,29 @@ header{
     .right-side{    
         align-items: center;
     }
-    .sites h2{
-        display: flex;
+    .subtitulo h2{
         text-align: left;
-        padding-right: auto;
     }
     .container-conteudo{
         display: flex;
         justify-content: space-around;
         width: 100%;
         flex-wrap: wrap;
-       
     }
-    .newsletter{
+    .sobreMim{
         display: flex;
         padding-right: 40px;
         padding-left: 40px;
         flex-wrap: nowrap;
-
     }
-    .newsletter img{
-        width: 130px;
+    .sobreMim img{
+        width: 200px;
+        height: 200px;
         border-radius: 100%;
-    
     }
-    .newsletter p{
-        padding-left: 30px;
+    .sobreMim div p{
+        text-align: left;
+        padding-top: 3%;
+        padding-left: 3%;
     }
 }
