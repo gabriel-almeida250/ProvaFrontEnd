@@ -5,35 +5,37 @@
     box-sizing: border-box;
 }
 body{
-   font-family: 'Times New Roman', Times, serif;
+    font-family: 'Mukta', sans-serif;
 }
 header{
     padding: 10px;
-    margin: auto;
-    background-color: #f70000;
-}
-.left-side h1{
-    margin-bottom: 10px;
-}
-.right-side{    
-    align-items: center;
+    background-color: #ff0000;
 }
 .left-side, .right-side{
     display: flex;
     justify-content: center;
+    font-size: large;  
 }
 .navegacao{
     display: flex;
-    gap: 40px;
+    gap: 20px;
 }
 .navegacao li{
+    list-style: none;
+}
+.navegacao li a{
+    color: #000000;
+    text-decoration: none;
+}
+.icones {
+    display: flex;
+    justify-content: center;
     list-style-type: none;
 }
 .icones ul{
     display: flex;
-    justify-content:end;
     list-style-type: none;
-    padding-right: 33px;
+    justify-content: end;
 }
 .icones img{
     width: 40px;
@@ -42,15 +44,14 @@ header{
 }
 .textotopo {
     text-align: center;
-   
 }
 .textotopo h2{
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin: 40px 20px 40px 20px;
+    
 }
 .textotopo p{
-    margin-right: 40px;
-    margin-left: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
     margin-bottom: 40px;
 }
 .subtitulo{
@@ -65,14 +66,19 @@ header{
 .container-conteudo{
     display: flex;
     justify-content: space-around;
-    width: 100%;
+    align-items: center;
     flex-wrap: wrap;
+
 }
 .card{
     max-width: 300px;
-    border: 2px solid #f70000;
+    border: 2px solid #ff0000;
     border-radius: 10px;
     margin-bottom: 40px;
+    box-shadow: 0 0 1em #000000;
+}
+.card :hover{
+    transform: scale(1.1);
 }
 .card p{
     text-align: center;
@@ -81,26 +87,26 @@ header{
 .card .container-botao{
     display: flex;
     justify-content: end;
+    margin: 5px;
 }
-
 .card a{
-    background-color: aqua;
-    color: azure;
-    border-radius: 10px;
+    background-color: #ff0000;
+    border-radius: 8px;
     text-decoration: none;
-    padding: 8px 16px;
-    border: 1px solid#333;
+    padding: 5px 10px;
+    color: #000000;
 }
 .card img{
-    height: 200px;
+    height: 250px;
     width: 100%;
     object-fit: cover;
-    border-bottom: 2px solid #f70000;
-    border-radius: 10px 10px 0 0;
+    border-bottom: 2px solid #ff0000;
+    border-radius: 8px 8px 0 0;
 }
+
 .sobreMim{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     margin-right: 20px;
     margin-left: 20px;
@@ -114,18 +120,87 @@ header{
 .sobreMim div p{
     text-align: center;
     margin-bottom: 40px;
-
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
+.formulario h2{
+    text-align: center;
+    margin: 0px 20px 40px 20px;
+}
+.formulario form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 0 20px 40px 20px;
+    border: 2px solid #ff0000;
+    border-radius: 5px;
+    padding: 0.5em;
+}
+.formulario form input:not(input[type="checkbox"]){
+    border: 2px solid #ff0000;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+}
+.formulario div .check{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.formulario div .check input{
+    margin-right: 10px;
+}
+.formulario div .botao{
+    background-color: #ff0000;
+    width: 100%;
+    padding: 1%;
+    cursor: pointer;
+    font-weight: bold;
+    font-size:large;
+    border-radius: 10px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ff0000;
+}
+footer h4{
+    padding-top: 10px;
+    text-align: center;
+}
+footer .conteudo-fim .icones{
+    display: flex;
+    justify-content: center;
+    font-size: large; 
 }
 @media screen and (min-width:992px){
     header{
         display: flex;
         justify-content: space-between;
-        margin: auto;
         padding-right: 40px;
         padding-left: 40px;
     }
-    .right-side{    
+    .left-side, .right-side{
+        font-size: large;  
         align-items: center;
+    }
+    .navegacao{
+        display: flex;
+        gap: 20px;
+    }
+    .icones {
+        display: flex;
+        justify-content: end;
+        list-style-type: none;
+    }
+    .icones ul{
+        display: flex;
+        justify-content: end;
+        list-style-type: none;
     }
     .subtitulo h2{
         text-align: left;
@@ -137,19 +212,42 @@ header{
         flex-wrap: wrap;
     }
     .sobreMim{
-        display: flex;
-        padding-right: 40px;
-        padding-left: 40px;
+        padding-right: 20px;
+        padding-left: 20px;
         flex-wrap: nowrap;
-    }
-    .sobreMim img{
-        width: 200px;
-        height: 200px;
-        border-radius: 100%;
     }
     .sobreMim div p{
         text-align: left;
-        padding-top: 3%;
-        padding-left: 3%;
+        justify-content: center;
+        align-self: center;
+        padding-left: 40px;
+        padding-top: 40px;
+    }
+    .formulario form{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 45%;
+        margin: auto;
+        margin-bottom: 40px;
+        border: 2px solid #ff0000;
+        border-radius: 5px;
+        padding: 2%;
+    }
+    footer{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        padding: 10px 40px 10px 40px;
+    }
+    footer .conteudo-fim h4 {
+        text-align: left;
+        font-size: large;  
+        align-items: center;
+    }
+    footer .icones {
+       display: flex;
+       justify-content: end;
+       align-items: center;
     }
 }
