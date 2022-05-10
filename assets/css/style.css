@@ -100,7 +100,8 @@ header{
 
 }
 .card{
-    max-width: 300px;
+    max-width: 350px;
+    max-height: 600px;
     border: 5px solid #ffffff;
     border-radius: 10px;
     margin-bottom: 40px;
@@ -110,6 +111,7 @@ header{
     text-align: center;
     padding: 3%;
     border: #ffffff;
+    color: #ffffff;
 }
 .card .container-botao{
     display: flex;
