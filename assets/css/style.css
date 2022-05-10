@@ -8,6 +8,7 @@ body{
     font-family: 'Fugaz One', cursive;
     position: relative;
     background-color: #ca2f00;
+    
 }
 html{
     scroll-behavior: smooth;
@@ -22,12 +23,15 @@ html{
 header{
     padding: 10px;
     background-color: #000000;
+    border-bottom: 5px solid #ffffff;
 }
 .left-side, .right-side{
     display: flex;
     justify-content: center;
     font-size: large; 
-    color: #ffffff;
+    color: #f7a500;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
 }
 .right-side :hover{
     color: #ca2f00;
@@ -40,7 +44,7 @@ header{
     list-style: none;
 }
 .navegacao li a{
-    color: #ffffff;
+    color: #f7a500;
     text-decoration: none;
 }
 .icones {
@@ -63,7 +67,11 @@ header{
 }
 .textotopo h2{
     margin: 40px 20px 40px 20px;
-    color: #ffffff;
+    color: #f7a500;
+    font-size: 40px;
+
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
 }
 .textotopo p{
     margin-right: 20px;
@@ -75,12 +83,14 @@ header{
 .subtitulo{
     border-bottom: 5px solid #ffffff;
     margin: 0px 40px 40px 40px;
-
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
 }
 .subtitulo h2{
     text-align: center;
     margin-bottom: 20px;
-    color: #ffffff;
+    color: #f7a500;
+    font-size: 40px;
 }
 .container-conteudo{
     display: flex;
@@ -123,7 +133,7 @@ header{
     border-radius: 8px 8px 0 0;
 }
 .card a:hover{
-    color: #ca2f00;
+    color: #f7a500;
 }
 #verde{
     background-color: #008c17;
@@ -172,20 +182,25 @@ header{
     color: #ffffff;
 }
 .formulario form{
-    border: 5px solid #ffffff;
-
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
     margin: 0 20px 40px 20px;
-    border: 5px solid #000000;
     border-radius: 5px;
     padding: 0.5em;
     background-color: #000000;
-    color: #ffffff;
+    color: #f7a500;
+    border: 5px solid #ffffff;
+  
+
+}
+.formulario form label{
+    font-size: 25px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
 }
 .formulario form input:not(input[type="checkbox"]){
-    border: 2px solid #ffffff;
+    border: 5px solid #ca2f00;
     border-radius: 5px;
     margin-bottom: 10px;
     width: 100%;
@@ -195,7 +210,7 @@ header{
     display: flex;
     width: 100%;
     align-items: center;
-    color: #ffffff;
+    color: #f7a500;
 
 }
 .formulario div .check input{
@@ -218,18 +233,21 @@ footer{
     justify-content: center;
     flex-direction: column;
     background-color: #000000;
-    border-top: 2px #ffffff;
+    border-top: 5px solid#ffffff;
+    
 }
-footer h4{
+footer p{
     padding-top: 10px;
     text-align: center;
-    color: #ffffff;
+    color: #f7a500 ;
+    font-size: 25px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
     
 }
 footer .conteudo-fim .icones{
     display: flex;
     justify-content: center;
-    font-size: large; 
 }
 @media screen and (min-width:992px){
      /*.fundo {
@@ -308,10 +326,10 @@ footer .conteudo-fim .icones{
         flex-direction: row;
         padding: 10px 0px 10px 0px;
     }
-    footer .conteudo-fim h4 {
+    footer .conteudo-fim p {
         text-align: left;
         font-size: large;  
-        align-items: center;
+        align-items: left;
     }
     footer .icones {
        display: flex;
