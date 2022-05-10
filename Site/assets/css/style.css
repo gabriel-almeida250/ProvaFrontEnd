@@ -28,9 +28,7 @@ header{
     justify-content: center;
     font-size: large; 
     color: #ffffff;
-    flex-direction: column;
 }
-
 .right-side :hover{
     color: #ca2f00;
 }
@@ -291,7 +289,7 @@ footer .conteudo-fim .icones{
         justify-content: center;
         align-self: center;
         padding-left: 40px;
-        padding-top: 40px;
+        padding-top: 50px;
     }
     .formulario form{
         display: flex;
@@ -300,7 +298,7 @@ footer .conteudo-fim .icones{
         width: 45%;
         margin: auto;
         margin-bottom: 40px;
-        border: 2px solid #ffffff;
+        border: 5px solid #ffffff;
         border-radius: 5px;
         padding: 2%;
     }
@@ -308,7 +306,7 @@ footer .conteudo-fim .icones{
         display: flex;
         justify-content: space-between;
         flex-direction: row;
-        padding: 10px 40px 10px 40px;
+        padding: 10px 0px 10px 0px;
     }
     footer .conteudo-fim h4 {
         text-align: left;
@@ -318,6 +316,6 @@ footer .conteudo-fim .icones{
     footer .icones {
        display: flex;
        justify-content: end;
-       align-items: center;
+       align-items: flex-end        ;
     }
 }
