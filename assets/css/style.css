@@ -107,6 +107,12 @@ header{
     margin-bottom: 40px;
     box-shadow: 0 0 1em #000000;
 }
+.card h1{
+    text-align: center;
+    color: #f7a500;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+}
 .card p{
     text-align: center;
     padding: 3%;
